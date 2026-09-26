@@ -1,352 +1,1039 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MIR4 Monitor | Servidores e Vales</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+<title>MIR4 Monitor</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#080a0e;
+    color:#fff;
+    min-height:100vh;
+}
+
+header{
+    background:#0d1015;
+    border-bottom:1px solid #242a33;
+    padding:20px;
+}
+
+.header-content{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:23px;
+    font-weight:900;
+    letter-spacing:1px;
+    color:#e1b85b;
+}
+
+.online{
+    color:#65dc91;
+    font-size:13px;
+}
+
+main{
+    max-width:1200px;
+    margin:auto;
+    padding:45px 20px;
+}
+
+.hero{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.hero span{
+    color:#e1b85b;
+}
+
+.hero p{
+    color:#9299a5;
+}
+
+.search{
+    max-width:600px;
+    margin:28px auto 35px;
+}
+
+.search input{
+    width:100%;
+    padding:16px 18px;
+    border-radius:10px;
+    border:1px solid #303642;
+    background:#11151b;
+    color:#fff;
+    outline:none;
+    font-size:16px;
+}
+
+.search input:focus{
+    border-color:#e1b85b;
+}
+
+.regions{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:38px;
+}
+
+.region{
+    min-width:105px;
+    padding:13px 18px;
+    border-radius:8px;
+    border:1px solid #303642;
+    background:#11151b;
+    color:#ddd;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.region:hover{
+    border-color:#e1b85b;
+}
+
+.region.active{
+    background:#e1b85b;
+    border-color:#e1b85b;
+    color:#080a0e;
+}
+
+.info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.info h2{
+    font-size:21px;
+}
+
+.count{
+    color:#8f96a1;
+    font-size:14px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
+.card{
+    background:#11151b;
+    border:1px solid #282e38;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+    border-color:#e1b85b;
+}
+
+.server{
+    padding:18px;
+    font-size:21px;
+    font-weight:800;
+    color:#e1b85b;
+    border-bottom:1px solid #282e38;
+}
+
+.valleys{
+    padding:12px;
+}
+
+.valley{
+    padding:13px;
+    margin-bottom:8px;
+    background:#090c11;
+    border-radius:8px;
+}
+
+.valley:last-child{
+    margin-bottom:0;
+}
+
+.valley-name{
+    color:#8d94a0;
+    font-size:12px;
+    text-transform:uppercase;
+    margin-bottom:5px;
+}
+
+.clan{
+    font-size:15px;
+    word-break:break-word;
+}
+
+.empty{
+    grid-column:1/-1;
+    text-align:center;
+    padding:60px;
+    color:#858c97;
+}
+
+.source{
+    margin-top:35px;
+    padding:15px;
+    background:#0d1117;
+    border:1px solid #242a33;
+    border-radius:8px;
+    color:#838b96;
+    font-size:12px;
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:30px 20px;
+    color:#646c78;
+    font-size:12px;
+}
+
+@media(max-width:900px){
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .grid{
+        grid-template-columns:1fr;
     }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #090b0f;
-      color: #ffffff;
-      min-height: 100vh;
+    .hero h1{
+        font-size:28px;
     }
 
-    header {
-      background: #0d1016;
-      border-bottom: 1px solid #282d36;
-      padding: 22px 6%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    .region{
+        min-width:85px;
     }
 
-    .logo {
-      font-size: 24px;
-      font-weight: 800;
-      color: #d9ad55;
-      letter-spacing: 1px;
+    .info{
+        align-items:flex-start;
+        gap:8px;
+        flex-direction:column;
     }
-
-    .status {
-      color: #65d98b;
-      font-size: 14px;
-    }
-
-    main {
-      width: 92%;
-      max-width: 1200px;
-      margin: auto;
-      padding: 55px 0;
-    }
-
-    .hero {
-      text-align: center;
-      margin-bottom: 45px;
-    }
-
-    .hero h1 {
-      font-size: 38px;
-      margin-bottom: 12px;
-    }
-
-    .hero h1 span {
-      color: #d9ad55;
-    }
-
-    .hero p {
-      color: #9399a5;
-      font-size: 16px;
-    }
-
-    .search {
-      max-width: 620px;
-      margin: 30px auto;
-    }
-
-    .search input {
-      width: 100%;
-      padding: 17px 20px;
-      border-radius: 10px;
-      border: 1px solid #303641;
-      background: #11151c;
-      color: white;
-      font-size: 16px;
-      outline: none;
-    }
-
-    .search input:focus {
-      border-color: #d9ad55;
-    }
-
-    .regions {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 12px;
-      margin-bottom: 45px;
-    }
-
-    .region {
-      padding: 18px 10px;
-      background: #11151c;
-      border: 1px solid #282e38;
-      border-radius: 10px;
-      text-align: center;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    .region:hover,
-    .region.active {
-      background: #d9ad55;
-      color: #080a0d;
-      border-color: #d9ad55;
-    }
-
-    .section-title {
-      margin-bottom: 18px;
-    }
-
-    .section-title h2 {
-      font-size: 22px;
-    }
-
-    .section-title p {
-      margin-top: 6px;
-      color: #858c98;
-      font-size: 14px;
-    }
-
-    .servers {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
-    .server-card {
-      background: #11151c;
-      border: 1px solid #292f39;
-      border-radius: 12px;
-      padding: 22px;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    .server-card:hover {
-      transform: translateY(-3px);
-      border-color: #d9ad55;
-    }
-
-    .server-name {
-      color: #d9ad55;
-      font-size: 21px;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-
-    .valley {
-      background: #0b0e13;
-      padding: 11px 12px;
-      border-radius: 7px;
-      margin-top: 8px;
-      color: #c9ccd2;
-      font-size: 14px;
-    }
-
-    .valley strong {
-      color: #ffffff;
-    }
-
-    footer {
-      margin-top: 70px;
-      padding: 30px;
-      text-align: center;
-      border-top: 1px solid #20252d;
-      color: #6f7681;
-      font-size: 13px;
-    }
-
-    @media (max-width: 850px) {
-      .regions {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .servers {
-        grid-template-columns: 1fr;
-      }
-
-      .hero h1 {
-        font-size: 29px;
-      }
-    }
-
-    @media (max-width: 500px) {
-      header {
-        padding: 18px;
-      }
-
-      .logo {
-        font-size: 19px;
-      }
-
-      .regions {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      main {
-        padding-top: 35px;
-      }
-    }
-  </style>
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo">MIR4 MONITOR</div>
-  <div class="status">● Sistema Online</div>
+<div class="header-content">
+
+<div class="logo">
+MIR4 MONITOR
+</div>
+
+<div class="online">
+● ONLINE
+</div>
+
+</div>
 </header>
+
 
 <main>
 
-  <section class="hero">
-    <h1>Monitor de <span>Servidores MIR4</span></h1>
+<section class="hero">
 
-    <p>
-      Consulte servidores, clãs dominantes e os três Vales Ocultos.
-    </p>
+<h1>
+Monitor de <span>Vales MIR4</span>
+</h1>
 
-    <div class="search">
-      <input
-        type="text"
-        id="searchServer"
-        placeholder="Pesquisar servidor..."
-        onkeyup="searchServers()"
-      >
-    </div>
-  </section>
+<p>
+Consulte rapidamente quem controla os três Vales Ocultos.
+</p>
 
-  <div class="regions">
-    <div class="region active" onclick="changeRegion('SA', this)">SA</div>
-    <div class="region" onclick="changeRegion('NA', this)">NA</div>
-    <div class="region" onclick="changeRegion('EU', this)">EU</div>
-    <div class="region" onclick="changeRegion('ASIA', this)">ASIA</div>
-    <div class="region" onclick="changeRegion('INMENA', this)">INMENA</div>
-  </div>
+<div class="search">
 
-  <section>
-    <div class="section-title">
-      <h2 id="regionTitle">Servidores SA</h2>
-      <p>Selecione ou pesquise um servidor.</p>
-    </div>
+<input
+id="search"
+type="text"
+placeholder="Digite o servidor. Ex.: SA011"
+autocomplete="off">
 
-    <div class="servers" id="serverList"></div>
-  </section>
+</div>
+
+</section>
+
+
+<div class="regions">
+
+<button class="region active" data-region="SA">
+SA
+</button>
+
+<button class="region" data-region="NA">
+NA
+</button>
+
+<button class="region" data-region="EU">
+EU
+</button>
+
+<button class="region" data-region="ASIA">
+ASIA
+</button>
+
+<button class="region" data-region="INMENA">
+INMENA
+</button>
+
+</div>
+
+
+<div class="info">
+
+<h2 id="title">
+Servidores SA
+</h2>
+
+<div class="count" id="count"></div>
+
+</div>
+
+
+<div class="grid" id="grid"></div>
+
+
+<div class="source">
+Dados de domínio baseados na página oficial Hidden Valley Capture do MIR4.
+</div>
 
 </main>
 
+
 <footer>
-  MIR4 Monitor — ferramenta independente para consulta de servidores.
+MIR4 Monitor • Projeto independente e não afiliado à Wemade.
 </footer>
+
 
 <script>
 
-  const servers = {
-    SA: ["SA11", "SA21", "SA31", "SA41", "SA51", "SA61"],
-    NA: ["NA11", "NA21", "NA31", "NA41"],
-    EU: ["EU11", "EU21", "EU31", "EU41"],
-    ASIA: ["ASIA11", "ASIA21", "ASIA31", "ASIA41"],
-    INMENA: ["INMENA11", "INMENA21"]
-  };
+const servers = [
 
-  let currentRegion = "SA";
+/* =========================
+   SOUTH AMERICA
+========================= */
 
-  function renderServers(list) {
+{
+region:"SA",
+server:"SA011",
+bicheon:"77 Team 三",
+snake:"77 Team 二",
+redmoon:"NoT FounDツ"
+},
 
-    const container = document.getElementById("serverList");
+{
+region:"SA",
+server:"SA012",
+bicheon:"UNFORGIVEN 三",
+snake:"TROPA UNF",
+redmoon:"UNFORGIVEN 一"
+},
 
-    container.innerHTML = "";
+{
+region:"SA",
+server:"SA013",
+bicheon:"77 Teäm II",
+snake:"77 BRAZINO 亗",
+redmoon:"77 Teäm I"
+},
 
-    list.forEach(server => {
+{
+region:"SA",
+server:"SA021",
+bicheon:"亗 DHM黑龙 亗",
+snake:"UNFORGIVENSA",
+redmoon:"77 Team ll"
+},
 
-      const card = document.createElement("div");
+{
+region:"SA",
+server:"SA022",
+bicheon:"SalaCrypto大麻",
+snake:"BAYZHypeSÐ",
+redmoon:"金Shuт Down為"
+},
 
-      card.className = "server-card";
+{
+region:"SA",
+server:"SA023",
+bicheon:"メFUSIONメ",
+snake:"New Order ツ",
+redmoon:"SalaCrypto凤凰"
+},
 
-      card.innerHTML = `
-        <div class="server-name">${server}</div>
+{
+region:"SA",
+server:"SA031",
+bicheon:"dr34ms",
+snake:"77 Team II",
+redmoon:"dr34m"
+},
 
-        <div class="valley">
-          🏔️ <strong>Bicheon Valley</strong><br>
-          Clã dominante: Aguardando dados
-        </div>
+{
+region:"SA",
+server:"SA032",
+bicheon:"SC LPKcripto",
+snake:"IMPERIUM ッ",
+redmoon:"SalaCrypto小丑"
+},
 
-        <div class="valley">
-          🐍 <strong>Snake Valley</strong><br>
-          Clã dominante: Aguardando dados
-        </div>
+{
+region:"SA",
+server:"SA042",
+bicheon:"NKaaixaaSS",
+snake:"NKaixaSS",
+redmoon:"120KaixaSS"
+},
 
-        <div class="valley">
-          🌙 <strong>Redmoon Valley</strong><br>
-          Clã dominante: Aguardando dados
-        </div>
-      `;
 
-      container.appendChild(card);
+/* =========================
+   NORTH AMERICA
+========================= */
 
-    });
+{
+region:"NA",
+server:"NA011",
+bicheon:"名人堂丶Sinners",
+snake:"Mars 彡",
+redmoon:"300丨风暴"
+},
 
-  }
+{
+region:"NA",
+server:"NA012",
+bicheon:"名人堂 3OO水",
+snake:"名人堂 3OO",
+redmoon:"名人堂 Légokids"
+},
 
-  function changeRegion(region, element) {
+{
+region:"NA",
+server:"NA013",
+bicheon:"快乐名人堂②",
+snake:"SC OobyDoo",
+redmoon:"快乐名人堂①"
+},
 
-    currentRegion = region;
+{
+region:"NA",
+server:"NA014",
+bicheon:"Utøpia 么",
+snake:"名人堂UnderÐøgs",
+redmoon:"名人殿 AzAr"
+},
 
-    document.querySelectorAll(".region")
-      .forEach(item => item.classList.remove("active"));
+{
+region:"NA",
+server:"NA021",
+bicheon:"MTH Gryphons",
+snake:"华夏 饕餮",
+redmoon:"Justice Nova"
+},
 
-    element.classList.add("active");
+{
+region:"NA",
+server:"NA022",
+bicheon:"DTM Unity nW",
+snake:"名人堂 龍行龘龘",
+redmoon:"名人堂 金戈铁马"
+},
 
-    document.getElementById("regionTitle").innerText =
-      "Servidores " + region;
+{
+region:"NA",
+server:"NA023",
+bicheon:"名人堂 ORIOИ",
+snake:"好运名人堂",
+redmoon:"HOF LEGENDS"
+},
 
-    document.getElementById("searchServer").value = "";
+{
+region:"NA",
+server:"NA031",
+bicheon:"名人堂丨우아한 가족 3",
+snake:"名人堂丨우아한 가족 2",
+redmoon:"名人堂丨우아한 가족"
+},
 
-    renderServers(servers[region]);
+{
+region:"NA",
+server:"NA032",
+bicheon:"名人堂丨春暖花开",
+snake:"名人堂 Hydra",
+redmoon:"Top丶华夏·朱雀"
+},
 
-  }
+{
+region:"NA",
+server:"NA042",
+bicheon:"ⒷZ・VALHALLA②",
+snake:"ⒷZ・VALHALLA③",
+redmoon:"ⒷZ・VALHALLA"
+},
 
-  function searchServers() {
 
-    const value =
-      document.getElementById("searchServer")
-      .value
-      .toUpperCase()
-      .trim();
+/* =========================
+   EUROPE
+========================= */
 
-    if (!value) {
-      renderServers(servers[currentRegion]);
-      return;
-    }
+{
+region:"EU",
+server:"EU011",
+bicheon:"St・Avengers",
+snake:"Team Ⓖ",
+redmoon:"St・SHIELⒹ"
+},
 
-    const allServers = Object.values(servers).flat();
+{
+region:"EU",
+server:"EU012",
+bicheon:"名门 GRANCLOE",
+snake:"Orion Fenix",
+redmoon:"名门 主主 Orion"
+},
 
-    const results =
-      allServers.filter(server => server.includes(value));
+{
+region:"EU",
+server:"EU021",
+bicheon:"GearsofWar ①",
+snake:"华夏GoldenCrow",
+redmoon:"SÐ MataЯindo"
+},
 
-    renderServers(results);
+{
+region:"EU",
+server:"EU022",
+bicheon:"名门 RIP丶Chаоs",
+snake:"77 CAPS",
+redmoon:"GearsofWar メ"
+},
 
-  }
+{
+region:"EU",
+server:"EU024",
+bicheon:"名门 Anonymous",
+snake:"名人堂丨잘생긴 가족",
+redmoon:"KILLINGZONES"
+},
 
-  renderServers(servers.SA);
+{
+region:"EU",
+server:"EU032",
+bicheon:"LENKJR",
+snake:"王 LEGION 王",
+redmoon:"0FEARLESS0"
+},
+
+
+/* =========================
+   INMENA
+========================= */
+
+{
+region:"INMENA",
+server:"INMENA011",
+bicheon:"Usdt 丶Kage",
+snake:"포양・Stark",
+redmoon:"포양・Olympus"
+},
+
+{
+region:"INMENA",
+server:"INMENA013",
+bicheon:"华夏 Phoenix",
+snake:"葬爱家族③",
+redmoon:"葬爱家族①"
+},
+
+{
+region:"INMENA",
+server:"INMENA021",
+bicheon:"HallⓈfTrⓅlls",
+snake:"HallⒹfTrⓀlls",
+redmoon:"纪 检 委 ①"
+},
+
+{
+region:"INMENA",
+server:"INMENA023",
+bicheon:"HallⓎfTrolls",
+snake:"Hall⓪fTrolls",
+redmoon:"HallⒶfTrolls"
+},
+
+{
+region:"INMENA",
+server:"INMENA031",
+bicheon:"포양・暗いLegion",
+snake:"포양・BlackT",
+redmoon:"포양・Fusang"
+},
+
+{
+region:"INMENA",
+server:"INMENA032",
+bicheon:"Hall⑦fTrolls",
+snake:"HallⒺfTrolls",
+redmoon:"HallⒾfTrolls"
+},
+
+
+/* =========================
+   ASIA
+========================= */
+
+{
+region:"ASIA",
+server:"ASIA311",
+bicheon:"名人堂 HEAVENS",
+snake:"ET丶ѴiӃings",
+redmoon:"征戰九州之藍白拖鞋"
+},
+
+{
+region:"ASIA",
+server:"ASIA312",
+bicheon:"XOXOツ",
+snake:"名人堂 Yamazaki",
+redmoon:"China朱雀阁"
+},
+
+{
+region:"ASIA",
+server:"ASIA313",
+bicheon:"パリピ・Javanese",
+snake:"心友・ 爪OCHI",
+redmoon:"名人堂 ⓒancerus"
+},
+
+{
+region:"ASIA",
+server:"ASIA321",
+bicheon:"名人堂丶BLVCK",
+snake:"名人堂丶Trsvlls",
+redmoon:"名人堂丶FENRIR"
+},
+
+{
+region:"ASIA",
+server:"ASIA322",
+bicheon:"天下๑ Ⓔternal",
+snake:"乌托邦度假村VD",
+redmoon:"乌托邦度假村"
+},
+
+{
+region:"ASIA",
+server:"ASIA323",
+bicheon:"名人堂・Aesir・Ⓛ",
+snake:"名人堂・Hà Nội",
+redmoon:"名人堂丶Shiba"
+},
+
+{
+region:"ASIA",
+server:"ASIA331",
+bicheon:"名人堂・MAFIA",
+snake:"天上人间国际休闲会所",
+redmoon:"名人堂・心悦"
+},
+
+{
+region:"ASIA",
+server:"ASIA332",
+bicheon:"名人堂・ZILCH",
+snake:"名人堂 羁绊BOND",
+redmoon:"名人堂 利刃BLADE"
+},
+
+{
+region:"ASIA",
+server:"ASIA333",
+bicheon:"天龍门メ群雄",
+snake:"天龍门②",
+redmoon:"天龍门①"
+},
+
+{
+region:"ASIA",
+server:"ASIA334",
+bicheon:"名人堂丨Faith",
+snake:"名人堂丶DYNASTY",
+redmoon:"名人堂 NBP"
+},
+
+{
+region:"ASIA",
+server:"ASIA342",
+bicheon:"名人堂・Articuno",
+snake:"名人堂・Squirtle",
+redmoon:"名人堂 ・Zapdos"
+},
+
+{
+region:"ASIA",
+server:"ASIA042",
+bicheon:"bistro65ⓉⒽ",
+snake:"A r K s 丶",
+redmoon:"メ ARCANA"
+},
+
+{
+region:"ASIA",
+server:"ASIA011",
+bicheon:"ArKs EVA丨风暴",
+snake:"ArKs THC丨风暴",
+redmoon:"A r K s ・"
+},
+
+{
+region:"ASIA",
+server:"ASIA012",
+bicheon:"ArKsメNïnë HS",
+snake:"ArKs丨Nyths メ",
+redmoon:"A r K s゜"
+},
+
+{
+region:"ASIA",
+server:"ASIA021",
+bicheon:"Dreⓐm丨风暴①",
+snake:"Dreⓐm丨风暴②",
+redmoon:"小猫丨风暴"
+},
+
+{
+region:"ASIA",
+server:"ASIA022",
+bicheon:"KiffySlayer",
+snake:"棉花糖丨风暴",
+redmoon:"青龙会"
+},
+
+{
+region:"ASIA",
+server:"ASIA023",
+bicheon:"ⒼⒼⓈ丨DENIED",
+snake:"KRUSAÐA",
+redmoon:"名人堂丶叛徒必死"
+},
+
+{
+region:"ASIA",
+server:"ASIA031",
+bicheon:"폭동 KRUSAÐA",
+snake:"名人堂 丶Oni",
+redmoon:"名人堂 丶Hannya"
+},
+
+{
+region:"ASIA",
+server:"ASIA032",
+bicheon:"纯粹丨风暴",
+snake:"FreeMans丨风暴",
+redmoon:"Red丶Zone"
+},
+
+{
+region:"ASIA",
+server:"ASIA033",
+bicheon:"刃丨PINK・逍遥",
+snake:"刃丨无双",
+redmoon:"刃丨逍遥"
+},
+
+{
+region:"ASIA",
+server:"ASIA034",
+bicheon:"NightOwl梟",
+snake:"ⓉⓂKoreaDöll2",
+redmoon:"ⓉⓂKoreaDölls"
+},
+
+{
+region:"ASIA",
+server:"ASIA051",
+bicheon:"枘鑿丨萬端",
+snake:"Asia三大区最高检察院",
+redmoon:"征戰九州之傳奇霸业"
+},
+
+{
+region:"ASIA",
+server:"ASIA052",
+bicheon:"卧虎臧龙",
+snake:"名人堂 丶丿櫻落未央べ",
+redmoon:"Y剑指丶江山R"
+},
+
+{
+region:"ASIA",
+server:"ASIA053",
+bicheon:"名人堂丶MIND G",
+snake:"China名人堂",
+redmoon:"China名人堂Ⅰ"
+},
+
+{
+region:"ASIA",
+server:"ASIA061",
+bicheon:"名人堂・HN④",
+snake:"群雄逐鹿①",
+redmoon:"名人堂・HNツ"
+},
+
+{
+region:"ASIA",
+server:"ASIA062",
+bicheon:"名人堂CHINAIII",
+snake:"名人堂丨剑指苍穹",
+redmoon:"名人堂澄海国"
+},
+
+{
+region:"ASIA",
+server:"ASIA063",
+bicheon:"NORTH EAST",
+snake:"名人堂丶INFA",
+redmoon:"征战九州之传奇霸业⑥③"
+},
+
+{
+region:"ASIA",
+server:"ASIA081",
+bicheon:"名人堂・China",
+snake:"名人堂Phoeníx ①",
+redmoon:"名人堂丶雪中花①"
+},
+
+{
+region:"ASIA",
+server:"ASIA083",
+bicheon:"83 제우스",
+snake:"83 하데스",
+redmoon:"83 아레스"
+},
+
+{
+region:"ASIA",
+server:"ASIA092",
+bicheon:"征戰九州之傳奇霸业③",
+snake:"征戰九州之傳奇霸业②",
+redmoon:"征戰九州之傳奇霸业①"
+}
+
+];
+
+
+let currentRegion = "SA";
+
+
+const grid = document.getElementById("grid");
+const title = document.getElementById("title");
+const count = document.getElementById("count");
+const search = document.getElementById("search");
+
+
+function render(){
+
+const term = search.value
+.toUpperCase()
+.trim();
+
+
+let filtered = servers.filter(item => {
+
+if(term){
+
+return (
+item.server.toUpperCase().includes(term) ||
+item.bicheon.toUpperCase().includes(term) ||
+item.snake.toUpperCase().includes(term) ||
+item.redmoon.toUpperCase().includes(term)
+);
+
+}
+
+return item.region === currentRegion;
+
+});
+
+
+grid.innerHTML = "";
+
+
+if(filtered.length === 0){
+
+grid.innerHTML =
+`<div class="empty">
+Nenhum servidor encontrado.
+</div>`;
+
+count.textContent = "0 servidores";
+
+return;
+
+}
+
+
+filtered.forEach(item => {
+
+const card = document.createElement("div");
+
+card.className = "card";
+
+
+card.innerHTML = `
+
+<div class="server">
+${escapeHTML(item.server)}
+</div>
+
+<div class="valleys">
+
+<div class="valley">
+
+<div class="valley-name">
+🏔️ Bicheon Valley
+</div>
+
+<div class="clan">
+${escapeHTML(item.bicheon)}
+</div>
+
+</div>
+
+
+<div class="valley">
+
+<div class="valley-name">
+🐍 Snake Valley
+</div>
+
+<div class="clan">
+${escapeHTML(item.snake)}
+</div>
+
+</div>
+
+
+<div class="valley">
+
+<div class="valley-name">
+🌙 Redmoon Valley
+</div>
+
+<div class="clan">
+${escapeHTML(item.redmoon)}
+</div>
+
+</div>
+
+</div>
+
+`;
+
+grid.appendChild(card);
+
+});
+
+
+count.textContent =
+filtered.length +
+(filtered.length === 1 ? " servidor" : " servidores");
+
+}
+
+
+function escapeHTML(value){
+
+const div = document.createElement("div");
+
+div.textContent = value;
+
+return div.innerHTML;
+
+}
+
+
+document.querySelectorAll(".region")
+.forEach(button => {
+
+button.addEventListener("click", () => {
+
+currentRegion =
+button.dataset.region;
+
+search.value = "";
+
+document.querySelectorAll(".region")
+.forEach(btn =>
+btn.classList.remove("active")
+);
+
+button.classList.add("active");
+
+title.textContent =
+"Servidores " + currentRegion;
+
+render();
+
+});
+
+});
+
+
+search.addEventListener("input", () => {
+
+const term =
+search.value.trim();
+
+if(term){
+
+title.textContent =
+"Resultado da pesquisa";
+
+}else{
+
+title.textContent =
+"Servidores " + currentRegion;
+
+}
+
+render();
+
+});
+
+
+render();
 
 </script>
 
