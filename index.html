@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIR4 Monitor | Servidores e Vales</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #090b0f;
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #0d1016;
+      border-bottom: 1px solid #282d36;
+      padding: 22px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      color: #d9ad55;
+      letter-spacing: 1px;
+    }
+
+    .status {
+      color: #65d98b;
+      font-size: 14px;
+    }
+
+    main {
+      width: 92%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 55px 0;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 span {
+      color: #d9ad55;
+    }
+
+    .hero p {
+      color: #9399a5;
+      font-size: 16px;
+    }
+
+    .search {
+      max-width: 620px;
+      margin: 30px auto;
+    }
+
+    .search input {
+      width: 100%;
+      padding: 17px 20px;
+      border-radius: 10px;
+      border: 1px solid #303641;
+      background: #11151c;
+      color: white;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .search input:focus {
+      border-color: #d9ad55;
+    }
+
+    .regions {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin-bottom: 45px;
+    }
+
+    .region {
+      padding: 18px 10px;
+      background: #11151c;
+      border: 1px solid #282e38;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .region:hover,
+    .region.active {
+      background: #d9ad55;
+      color: #080a0d;
+      border-color: #d9ad55;
+    }
+
+    .section-title {
+      margin-bottom: 18px;
+    }
+
+    .section-title h2 {
+      font-size: 22px;
+    }
+
+    .section-title p {
+      margin-top: 6px;
+      color: #858c98;
+      font-size: 14px;
+    }
+
+    .servers {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .server-card {
+      background: #11151c;
+      border: 1px solid #292f39;
+      border-radius: 12px;
+      padding: 22px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .server-card:hover {
+      transform: translateY(-3px);
+      border-color: #d9ad55;
+    }
+
+    .server-name {
+      color: #d9ad55;
+      font-size: 21px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .valley {
+      background: #0b0e13;
+      padding: 11px 12px;
+      border-radius: 7px;
+      margin-top: 8px;
+      color: #c9ccd2;
+      font-size: 14px;
+    }
+
+    .valley strong {
+      color: #ffffff;
+    }
+
+    footer {
+      margin-top: 70px;
+      padding: 30px;
+      text-align: center;
+      border-top: 1px solid #20252d;
+      color: #6f7681;
+      font-size: 13px;
+    }
+
+    @media (max-width: 850px) {
+      .regions {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .servers {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 29px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      header {
+        padding: 18px;
+      }
+
+      .logo {
+        font-size: 19px;
+      }
+
+      .regions {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      main {
+        padding-top: 35px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">MIR4 MONITOR</div>
+  <div class="status">● Sistema Online</div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h1>Monitor de <span>Servidores MIR4</span></h1>
+
+    <p>
+      Consulte servidores, clãs dominantes e os três Vales Ocultos.
+    </p>
+
+    <div class="search">
+      <input
+        type="text"
+        id="searchServer"
+        placeholder="Pesquisar servidor..."
+        onkeyup="searchServers()"
+      >
+    </div>
+  </section>
+
+  <div class="regions">
+    <div class="region active" onclick="changeRegion('SA', this)">SA</div>
+    <div class="region" onclick="changeRegion('NA', this)">NA</div>
+    <div class="region" onclick="changeRegion('EU', this)">EU</div>
+    <div class="region" onclick="changeRegion('ASIA', this)">ASIA</div>
+    <div class="region" onclick="changeRegion('INMENA', this)">INMENA</div>
+  </div>
+
+  <section>
+    <div class="section-title">
+      <h2 id="regionTitle">Servidores SA</h2>
+      <p>Selecione ou pesquise um servidor.</p>
+    </div>
+
+    <div class="servers" id="serverList"></div>
+  </section>
+
+</main>
+
+<footer>
+  MIR4 Monitor — ferramenta independente para consulta de servidores.
+</footer>
+
+<script>
+
+  const servers = {
+    SA: ["SA11", "SA21", "SA31", "SA41", "SA51", "SA61"],
+    NA: ["NA11", "NA21", "NA31", "NA41"],
+    EU: ["EU11", "EU21", "EU31", "EU41"],
+    ASIA: ["ASIA11", "ASIA21", "ASIA31", "ASIA41"],
+    INMENA: ["INMENA11", "INMENA21"]
+  };
+
+  let currentRegion = "SA";
+
+  function renderServers(list) {
+
+    const container = document.getElementById("serverList");
+
+    container.innerHTML = "";
+
+    list.forEach(server => {
+
+      const card = document.createElement("div");
+
+      card.className = "server-card";
+
+      card.innerHTML = `
+        <div class="server-name">${server}</div>
+
+        <div class="valley">
+          🏔️ <strong>Bicheon Valley</strong><br>
+          Clã dominante: Aguardando dados
+        </div>
+
+        <div class="valley">
+          🐍 <strong>Snake Valley</strong><br>
+          Clã dominante: Aguardando dados
+        </div>
+
+        <div class="valley">
+          🌙 <strong>Redmoon Valley</strong><br>
+          Clã dominante: Aguardando dados
+        </div>
+      `;
+
+      container.appendChild(card);
+
+    });
+
+  }
+
+  function changeRegion(region, element) {
+
+    currentRegion = region;
+
+    document.querySelectorAll(".region")
+      .forEach(item => item.classList.remove("active"));
+
+    element.classList.add("active");
+
+    document.getElementById("regionTitle").innerText =
+      "Servidores " + region;
+
+    document.getElementById("searchServer").value = "";
+
+    renderServers(servers[region]);
+
+  }
+
+  function searchServers() {
+
+    const value =
+      document.getElementById("searchServer")
+      .value
+      .toUpperCase()
+      .trim();
+
+    if (!value) {
+      renderServers(servers[currentRegion]);
+      return;
+    }
+
+    const allServers = Object.values(servers).flat();
+
+    const results =
+      allServers.filter(server => server.includes(value));
+
+    renderServers(results);
+
+  }
+
+  renderServers(servers.SA);
+
+</script>
+
+</body>
+</html>
