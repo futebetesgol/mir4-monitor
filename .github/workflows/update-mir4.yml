@@ -1,11 +1,8 @@
 name: Atualizar dados MIR4
 
 on:
-  # Executa automaticamente de hora em hora
   schedule:
     - cron: "17 * * * *"
-
-  # Permite executar manualmente pelo botão Run workflow
   workflow_dispatch:
 
 permissions:
@@ -21,28 +18,20 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Baixar repositório
+      - name: Baixar repositorio
         uses: actions/checkout@v4
 
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: "pip"
 
-      - name: Criar requirements
-        run: |
-          cat > requirements.txt << 'EOF'
-          requests==2.32.5
-          beautifulsoup4==4.14.2
-          EOF
-
-      - name: Instalar dependências
+      - name: Instalar dependencias
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install requests beautifulsoup4
 
-      - name: Atualizar dados do MIR4
+      - name: Coletar dados oficiais do MIR4
         run: |
           python update_mir4.py
 
@@ -50,9 +39,9 @@ jobs:
         run: |
           test -s data.json
           python -m json.tool data.json > /dev/null
-          echo "data.json válido."
+          echo "data.json valido."
 
-      - name: Salvar atualização no GitHub
+      - name: Salvar dados atualizados
         run: |
           git config user.name "MIR4 Monitor Bot"
           git config user.email "actions@users.noreply.github.com"
@@ -60,9 +49,9 @@ jobs:
           git add data.json
 
           if git diff --cached --quiet; then
-            echo "Nenhuma mudança encontrada."
+            echo "Nenhuma alteracao encontrada."
             exit 0
           fi
 
-          git commit -m "Atualização automática dos dados MIR4"
+          git commit -m "Atualizacao automatica dos dados MIR4"
           git push
