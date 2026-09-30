@@ -1,7 +1,7 @@
 {
   "source": "MIR4 Official Community",
   "source_url": "https://forum.mir4global.com",
-  "updated_at_utc": "2026-09-30T18:31:25.087880+00:00",
+  "updated_at_utc": "2026-09-30T19:28:53.375848+00:00",
   "status": "ok",
   "servers": [
     {
@@ -7785,7 +7785,608 @@
         }
       ]
     },
-    "clans": []
+    "clans": [
+      {
+        "rank": 1,
+        "clan": "乌托邦度假村",
+        "leader": "wxar",
+        "power": 19030449
+      },
+      {
+        "rank": 2,
+        "clan": "乌托邦度假村VD",
+        "leader": "mini goosee",
+        "power": 17671560
+      },
+      {
+        "rank": 3,
+        "clan": "春夏秋冬",
+        "leader": "玩心",
+        "power": 17628928
+      },
+      {
+        "rank": 4,
+        "clan": "乌托邦度假村Carnal",
+        "leader": "Ⓢ・レオ",
+        "power": 16778455
+      },
+      {
+        "rank": 5,
+        "clan": "天下๑ Ⓩenith",
+        "leader": "天下๑ Ⓠ帥 卡皮巴拉Ⓒ",
+        "power": 14832261
+      },
+      {
+        "rank": 6,
+        "clan": "亗GroundZero亗",
+        "leader": "HoyKalboKa",
+        "power": 14669401
+      },
+      {
+        "rank": 7,
+        "clan": "天下๑ Ⓔternal",
+        "leader": "天下๑ Ⓠ魅 紅狐狸ⓑⓑ",
+        "power": 14573761
+      },
+      {
+        "rank": 8,
+        "clan": "名人堂・Moonクロネコ",
+        "leader": "6ynocider",
+        "power": 14573224
+      },
+      {
+        "rank": 9,
+        "clan": "Night Raider",
+        "leader": "Zämuk",
+        "power": 14559957
+      },
+      {
+        "rank": 10,
+        "clan": "名人堂丶Legend",
+        "leader": "๋judge",
+        "power": 12888669
+      },
+      {
+        "rank": 11,
+        "clan": "IKIGAI ゛",
+        "leader": "ㄚㄖ尺丨卂",
+        "power": 12596617
+      },
+      {
+        "rank": 12,
+        "clan": "天下๑Ⓢtaríon",
+        "leader": "SamEu",
+        "power": 11906494
+      },
+      {
+        "rank": 13,
+        "clan": "名人堂Ferious",
+        "leader": "จๅงฮยอน",
+        "power": 11054871
+      },
+      {
+        "rank": 14,
+        "clan": "天下๑ ⓈnowBear",
+        "leader": "Joon Keng",
+        "power": 11048665
+      },
+      {
+        "rank": 15,
+        "clan": "名人堂 SPRINGEN",
+        "leader": "神秘感",
+        "power": 10773541
+      },
+      {
+        "rank": 16,
+        "clan": "傲世神域",
+        "leader": "露雪",
+        "power": 10622703
+      },
+      {
+        "rank": 17,
+        "clan": "VENG3ANCE",
+        "leader": "14泡菜面",
+        "power": 10604633
+      },
+      {
+        "rank": 18,
+        "clan": "春夏秋冬③",
+        "leader": "lai102",
+        "power": 10439659
+      },
+      {
+        "rank": 19,
+        "clan": "天下๑ Ⓘnfinity",
+        "leader": "Alice Tanar",
+        "power": 9979728
+      },
+      {
+        "rank": 20,
+        "clan": "张开双腿干罗特老婆菊花",
+        "leader": "小短腿你爹我又回来了",
+        "power": 9679560
+      },
+      {
+        "rank": 21,
+        "clan": "布加迪",
+        "leader": "M O T I C A",
+        "power": 9485733
+      },
+      {
+        "rank": 22,
+        "clan": "Häпuman ѱ",
+        "leader": "kene99",
+        "power": 9350447
+      },
+      {
+        "rank": 23,
+        "clan": "天下๑ Ⓛegion",
+        "leader": "給我一個吻",
+        "power": 8896560
+      },
+      {
+        "rank": 24,
+        "clan": "ROYÂLTY",
+        "leader": "SUPSOPxGULAT",
+        "power": 8755823
+      },
+      {
+        "rank": 25,
+        "clan": "CoffeeCIub",
+        "leader": "普通人生",
+        "power": 8705687
+      },
+      {
+        "rank": 26,
+        "clan": "天下๑ Ⓢhine",
+        "leader": "魂族Ж子疯",
+        "power": 8552988
+      },
+      {
+        "rank": 27,
+        "clan": "MorbidAngels",
+        "leader": "N O V E J",
+        "power": 8418128
+      },
+      {
+        "rank": 28,
+        "clan": "SCORPION FCT",
+        "leader": "KielD82727",
+        "power": 8289197
+      },
+      {
+        "rank": 29,
+        "clan": "Dawn Winery",
+        "leader": "CNDella",
+        "power": 7988522
+      },
+      {
+        "rank": 30,
+        "clan": "与你同行 NG",
+        "leader": "zLilypot",
+        "power": 7886047
+      },
+      {
+        "rank": 31,
+        "clan": "宇宙无敌最帅一张开双腿",
+        "leader": "ⓈⓀⓎ军团 张开双腿",
+        "power": 7798307
+      },
+      {
+        "rank": 32,
+        "clan": "Opherian",
+        "leader": "MELDYTA",
+        "power": 7744722
+      },
+      {
+        "rank": 33,
+        "clan": "名人堂 丶Accord",
+        "leader": "Jahun",
+        "power": 7726386
+      },
+      {
+        "rank": 34,
+        "clan": "ForgottenEra",
+        "leader": "Quinn Renee",
+        "power": 7690038
+      },
+      {
+        "rank": 35,
+        "clan": "Li qun",
+        "leader": "浮空若梦",
+        "power": 7146369
+      },
+      {
+        "rank": 36,
+        "clan": "ลูกเต่า",
+        "leader": "꽝닌 고양이o",
+        "power": 6976685
+      },
+      {
+        "rank": 37,
+        "clan": "HumbleGòds",
+        "leader": "mataki01",
+        "power": 6925467
+      },
+      {
+        "rank": 38,
+        "clan": "LANDSLIDE",
+        "leader": "gomd0li",
+        "power": 6601265
+      },
+      {
+        "rank": 39,
+        "clan": "KALMADØ",
+        "leader": "ILYpandacoco",
+        "power": 6542152
+      },
+      {
+        "rank": 40,
+        "clan": "๙FREEDOM๙",
+        "leader": "John๑Carter",
+        "power": 6318579
+      },
+      {
+        "rank": 41,
+        "clan": "Pun Tea Gang",
+        "leader": "DRAGON358",
+        "power": 6037844
+      },
+      {
+        "rank": 42,
+        "clan": "需要金请找我",
+        "leader": "杰尼龟CC",
+        "power": 6026091
+      },
+      {
+        "rank": 43,
+        "clan": "名人堂 MKZ",
+        "leader": "RXN丶",
+        "power": 6003056
+      },
+      {
+        "rank": 44,
+        "clan": "BinulavogPH",
+        "leader": "xAmazonx",
+        "power": 5978237
+      },
+      {
+        "rank": 45,
+        "clan": "With God",
+        "leader": "Kyouryou 다리",
+        "power": 5969642
+      },
+      {
+        "rank": 46,
+        "clan": "Tempest TBG",
+        "leader": "BaLuĐạn",
+        "power": 5704947
+      },
+      {
+        "rank": 47,
+        "clan": "地獄INFERNO",
+        "leader": "mhariiyaa",
+        "power": 5581446
+      },
+      {
+        "rank": 48,
+        "clan": "S A O",
+        "leader": "GBxPPDRSG",
+        "power": 5566648
+      },
+      {
+        "rank": 49,
+        "clan": "STEELW0LVES",
+        "leader": "BlackMeteor",
+        "power": 5563796
+      },
+      {
+        "rank": 50,
+        "clan": "台灣之家",
+        "leader": "喵妳一拳",
+        "power": 5432858
+      },
+      {
+        "rank": 51,
+        "clan": "五星红",
+        "leader": "アビー25",
+        "power": 5429317
+      },
+      {
+        "rank": 52,
+        "clan": "licorice",
+        "leader": "饮惯了烈酒",
+        "power": 5276417
+      },
+      {
+        "rank": 53,
+        "clan": "KULTURA",
+        "leader": "lIZHAOYUNIl",
+        "power": 5052293
+      },
+      {
+        "rank": 54,
+        "clan": "Vườn Rau",
+        "leader": "YamiFingerN",
+        "power": 4995086
+      },
+      {
+        "rank": 55,
+        "clan": "Ravent",
+        "leader": "大发明家1",
+        "power": 4911886
+      },
+      {
+        "rank": 56,
+        "clan": "House Tyrell",
+        "leader": "Miielanz",
+        "power": 4794022
+      },
+      {
+        "rank": 57,
+        "clan": "A1nzOoalGown",
+        "leader": "Episode01",
+        "power": 4763297
+      },
+      {
+        "rank": 58,
+        "clan": "AFRA",
+        "leader": "LyLy«Love",
+        "power": 4650747
+      },
+      {
+        "rank": 59,
+        "clan": "YOⓁⓄ",
+        "leader": "ssaammm",
+        "power": 4602792
+      },
+      {
+        "rank": 60,
+        "clan": "空軍總部",
+        "leader": "Yajoknoi01",
+        "power": 4408911
+      },
+      {
+        "rank": 61,
+        "clan": "DragonWorld",
+        "leader": "PONGGA",
+        "power": 4351552
+      },
+      {
+        "rank": 62,
+        "clan": "Saints X4",
+        "leader": "キャポRaider",
+        "power": 4327159
+      },
+      {
+        "rank": 63,
+        "clan": "i12",
+        "leader": "Plosive",
+        "power": 4272725
+      },
+      {
+        "rank": 64,
+        "clan": "lhsxxas3322",
+        "leader": "Kenoth",
+        "power": 4266353
+      },
+      {
+        "rank": 65,
+        "clan": "MeltingPoînt",
+        "leader": "Rimenlx",
+        "power": 4209484
+      },
+      {
+        "rank": 66,
+        "clan": "oknwchfv82Mu",
+        "leader": "Göthy",
+        "power": 4108272
+      },
+      {
+        "rank": 67,
+        "clan": "Flagitous",
+        "leader": "Eirlys08",
+        "power": 4082619
+      },
+      {
+        "rank": 68,
+        "clan": "WARGÔDS",
+        "leader": "我叫一诺",
+        "power": 3920783
+      },
+      {
+        "rank": 69,
+        "clan": "Death Rowメ",
+        "leader": "Gabby424",
+        "power": 3916421
+      },
+      {
+        "rank": 70,
+        "clan": "POENIX",
+        "leader": "Shawwtie",
+        "power": 3880718
+      },
+      {
+        "rank": 71,
+        "clan": "Mantra Sect",
+        "leader": "Sherns",
+        "power": 3875930
+      },
+      {
+        "rank": 72,
+        "clan": "奇迹",
+        "leader": "LenaPal",
+        "power": 3688059
+      },
+      {
+        "rank": 73,
+        "clan": "愛丶Apocalypse",
+        "leader": "Seobiii",
+        "power": 3667165
+      },
+      {
+        "rank": 74,
+        "clan": "IRX Ragnarok",
+        "leader": "爸爸 Cotsner",
+        "power": 3661711
+      },
+      {
+        "rank": 75,
+        "clan": "WBBG66",
+        "leader": "cruzify",
+        "power": 3640832
+      },
+      {
+        "rank": 76,
+        "clan": "名人堂丶KT Manji",
+        "leader": "Elly7z",
+        "power": 3633528
+      },
+      {
+        "rank": 77,
+        "clan": "CPH・RECKLESS",
+        "leader": "U l t i",
+        "power": 3617298
+      },
+      {
+        "rank": 78,
+        "clan": "Boukendan",
+        "leader": "BieL☺Ø¢Ð",
+        "power": 3565537
+      },
+      {
+        "rank": 79,
+        "clan": "圣SaintsPH",
+        "leader": "EVA1900",
+        "power": 3507920
+      },
+      {
+        "rank": 80,
+        "clan": "PickAxeTribe",
+        "leader": "Sianni Mirea",
+        "power": 3494975
+      },
+      {
+        "rank": 81,
+        "clan": "M1R4 SOCIETY",
+        "leader": "xRokxRokx",
+        "power": 3448798
+      },
+      {
+        "rank": 82,
+        "clan": "RANKING PH",
+        "leader": "Huntress29",
+        "power": 3378288
+      },
+      {
+        "rank": 83,
+        "clan": "EastGarden",
+        "leader": "Driyaaan",
+        "power": 3226998
+      },
+      {
+        "rank": 84,
+        "clan": "卂爪丨卄卂几 卩卄",
+        "leader": "AntrAxMag",
+        "power": 3212768
+      },
+      {
+        "rank": 85,
+        "clan": "脆皮五花肉",
+        "leader": "March29th",
+        "power": 3169746
+      },
+      {
+        "rank": 86,
+        "clan": "Team Økay",
+        "leader": "简逸",
+        "power": 3115911
+      },
+      {
+        "rank": 87,
+        "clan": "GrimScythe",
+        "leader": "Elyzab3th",
+        "power": 3063436
+      },
+      {
+        "rank": 88,
+        "clan": "ÄNARCHY",
+        "leader": "Gray Bug",
+        "power": 3025574
+      },
+      {
+        "rank": 89,
+        "clan": "AFKerz",
+        "leader": "qazddys",
+        "power": 2952535
+      },
+      {
+        "rank": 90,
+        "clan": "BLACK SPIDER",
+        "leader": "Shintaaaa",
+        "power": 2923938
+      },
+      {
+        "rank": 91,
+        "clan": "S・H・I・E・L・D",
+        "leader": "小月ひより",
+        "power": 2910422
+      },
+      {
+        "rank": 92,
+        "clan": "Lght Cavalry",
+        "leader": "oย่าดีกว่า",
+        "power": 2828902
+      },
+      {
+        "rank": 93,
+        "clan": "一SENTINELS一",
+        "leader": "Elimaj",
+        "power": 2807617
+      },
+      {
+        "rank": 94,
+        "clan": "DarksoulsPH",
+        "leader": "BlameItOnMe",
+        "power": 2780629
+      },
+      {
+        "rank": 95,
+        "clan": "UnteDKnightS",
+        "leader": "Demon Suzuka",
+        "power": 2743896
+      },
+      {
+        "rank": 96,
+        "clan": "勇平晶晶晨夕2225",
+        "leader": "MAMA み子",
+        "power": 2709481
+      },
+      {
+        "rank": 97,
+        "clan": "Zodiac VN",
+        "leader": "ⓂⒺⒹⓊⓈⒶシ",
+        "power": 2703167
+      },
+      {
+        "rank": 98,
+        "clan": "123go123",
+        "leader": "PatayOneHit",
+        "power": 2656430
+      },
+      {
+        "rank": 99,
+        "clan": "謙遜門",
+        "leader": "龍鋼",
+        "power": 2615048
+      },
+      {
+        "rank": 100,
+        "clan": "S H A M A N",
+        "leader": "T A X I",
+        "power": 2611541
+      }
+    ]
   },
   "errors": []
 }
