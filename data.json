@@ -1,7 +1,7 @@
 {
   "source": "MIR4 Official Community",
   "source_url": "https://forum.mir4global.com",
-  "updated_at_utc": "2026-10-09T02:09:28.439843+00:00",
+  "updated_at_utc": "2026-10-09T09:03:33.290589+00:00",
   "status": "partial",
   "servers": [
     {
@@ -6979,15 +6979,17 @@
     "clans": []
   },
   "errors": [
-    "Hidden Valley: 500 Server Error: Internal Server Error for url: https://forum.mir4global.com/war/hiddenvalley",
-    "Power Ranking: 500 Server Error: Internal Server Error for url: https://forum.mir4global.com/rank?ranktype=1",
-    "Classe warrior: 500 Server Error: Internal Server Error for url: https://forum.mir4global.com/rank?classtype=1&ranktype=1000",
-    "Classe sorcerer: 500 Server Error: Internal Server Error for url: https://forum.mir4global.com/rank?classtype=2&ranktype=1000",
-    "Classe arbalist: 500 Server Error: Internal Server Error for url: https://forum.mir4global.com/rank?classtype=4&ranktype=1000",
-    "Classe lancer: 500 Server Error: Internal Server Error for url: https://forum.mir4global.com/rank?classtype=5&ranktype=1000",
-    "Classe darkist: 500 Server Error: Internal Server Error for url: https://forum.mir4global.com/rank?classtype=6&ranktype=1000",
-    "Classe lionheart: 500 Server Error: Internal Server Error for url: https://forum.mir4global.com/rank?classtype=7&ranktype=1000",
-    "Bicheon Castle: 500 Server Error: Internal Server Error for url: https://forum.mir4global.com/war/castlesiege",
-    "Sabuk: 500 Server Error: Internal Server Error for url: https://forum.mir4global.com/war/sabuksiege"
+    "Hidden Valley: HTTPSConnectionPool(host='forum.mir4global.com', port=443): Max retries exceeded with url: /war/hiddenvalley (Caused by ConnectTimeoutError(<HTTPSConnection(host='forum.mir4global.com', port=443) at 0x7f2093004980>, 'Connection to forum.mir4global.com timed out. (connect timeout=30)'))",
+    "Power Ranking: HTTPSConnectionPool(host='forum.mir4global.com', port=443): Max retries exceeded with url: /rank?ranktype=1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='forum.mir4global.com', port=443) at 0x7f2092086e70>, 'Connection to forum.mir4global.com timed out. (connect timeout=30)'))",
+    "Classe warrior: HTTPSConnectionPool(host='forum.mir4global.com', port=443): Max retries exceeded with url: /rank?classtype=1&ranktype=1000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='forum.mir4global.com', port=443) at 0x7f2092087110>, 'Connection to forum.mir4global.com timed out. (connect timeout=30)'))",
+    "Classe sorcerer: HTTPSConnectionPool(host='forum.mir4global.com', port=443): Max retries exceeded with url: /rank?classtype=2&ranktype=1000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='forum.mir4global.com', port=443) at 0x7f2092087470>, 'Connection to forum.mir4global.com timed out. (connect timeout=30)'))",
+    "Classe taoist: HTTPSConnectionPool(host='forum.mir4global.com', port=443): Max retries exceeded with url: /rank?classtype=3&ranktype=1000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='forum.mir4global.com', port=443) at 0x7f20920877d0>, 'Connection to forum.mir4global.com timed out. (connect timeout=30)'))",
+    "Classe arbalist: HTTPSConnectionPool(host='forum.mir4global.com', port=443): Max retries exceeded with url: /rank?classtype=4&ranktype=1000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='forum.mir4global.com', port=443) at 0x7f2092087b30>, 'Connection to forum.mir4global.com timed out. (connect timeout=30)'))",
+    "Classe lancer: HTTPSConnectionPool(host='forum.mir4global.com', port=443): Max retries exceeded with url: /rank?classtype=5&ranktype=1000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='forum.mir4global.com', port=443) at 0x7f2092087e90>, 'Connection to forum.mir4global.com timed out. (connect timeout=30)'))",
+    "Classe darkist: HTTPSConnectionPool(host='forum.mir4global.com', port=443): Max retries exceeded with url: /rank?classtype=6&ranktype=1000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='forum.mir4global.com', port=443) at 0x7f20935c8e90>, 'Connection to forum.mir4global.com timed out. (connect timeout=30)'))",
+    "Classe lionheart: HTTPSConnectionPool(host='forum.mir4global.com', port=443): Max retries exceeded with url: /rank?classtype=7&ranktype=1000 (Caused by ConnectTimeoutError(<HTTPSConnection(host='forum.mir4global.com', port=443) at 0x7f2092087ce0>, 'Connection to forum.mir4global.com timed out. (connect timeout=30)'))",
+    "Clan Ranking: HTTPSConnectionPool(host='forum.mir4global.com', port=443): Max retries exceeded with url: /rank?ranktype=4 (Caused by ConnectTimeoutError(<HTTPSConnection(host='forum.mir4global.com', port=443) at 0x7f2092087710>, 'Connection to forum.mir4global.com timed out. (connect timeout=30)'))",
+    "Bicheon Castle: HTTPSConnectionPool(host='forum.mir4global.com', port=443): Max retries exceeded with url: /war/castlesiege (Caused by ConnectTimeoutError(<HTTPSConnection(host='forum.mir4global.com', port=443) at 0x7f2092087380>, 'Connection to forum.mir4global.com timed out. (connect timeout=30)'))",
+    "Sabuk: HTTPSConnectionPool(host='forum.mir4global.com', port=443): Max retries exceeded with url: /war/sabuksiege (Caused by ConnectTimeoutError(<HTTPSConnection(host='forum.mir4global.com', port=443) at 0x7f2092086f60>, 'Connection to forum.mir4global.com timed out. (connect timeout=30)'))"
   ]
 }
