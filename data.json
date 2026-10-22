@@ -1,8 +1,8 @@
 {
   "source": "MIR4 Official Community",
   "source_url": "https://forum.mir4global.com",
-  "updated_at_utc": "2026-10-22T18:32:39.877931+00:00",
-  "status": "ok",
+  "updated_at_utc": "2026-10-22T22:20:20.791828+00:00",
+  "status": "partial",
   "servers": [
     {
       "server": "ASIA011",
@@ -8380,5 +8380,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "Sabuk: Response ended prematurely"
+  ]
 }
