@@ -1,7 +1,7 @@
 {
   "source": "MIR4 Official Community",
   "source_url": "https://forum.mir4global.com",
-  "updated_at_utc": "2026-11-19T03:26:30.757405+00:00",
+  "updated_at_utc": "2026-11-19T13:04:49.805648+00:00",
   "status": "ok",
   "servers": [
     {
@@ -265,7 +265,7 @@
     {
       "server": "ASIA311",
       "region": "ASIA",
-      "bicheon_valley": "春夏秋冬国际会所",
+      "bicheon_valley": "征戰九州之麻辣火鍋",
       "snake_valley": "名人堂 Genesisⓧ",
       "redmoon_valley": "征戰九州之藍白拖鞋"
     },
@@ -301,7 +301,7 @@
       "server": "ASIA323",
       "region": "ASIA",
       "bicheon_valley": "名人堂・神・Vhalla",
-      "snake_valley": "名人堂丶Shiba",
+      "snake_valley": "救世主・WP野",
       "redmoon_valley": "名人堂・Hà Nội"
     },
     {
@@ -321,14 +321,14 @@
     {
       "server": "ASIA333",
       "region": "ASIA",
-      "bicheon_valley": "天龍门Chaos",
+      "bicheon_valley": "天龍门メ群雄",
       "snake_valley": "天龍门②",
       "redmoon_valley": "天龍门①"
     },
     {
       "server": "ASIA334",
       "region": "ASIA",
-      "bicheon_valley": "名人堂・ⓒ六RиAGE",
+      "bicheon_valley": "名人堂丨PòóCHY",
       "snake_valley": "名人堂丶DYNASTY",
       "redmoon_valley": "名人堂 NBP"
     },
@@ -349,8 +349,8 @@
     {
       "server": "ASIA011",
       "region": "ASIA",
-      "bicheon_valley": "Danaerys",
-      "snake_valley": "ArKs END丨风暴",
+      "bicheon_valley": "ArKs・FINEST",
+      "snake_valley": "ArKs RVLS丨风暴",
       "redmoon_valley": "A r K s ・"
     },
     {
@@ -363,15 +363,15 @@
     {
       "server": "ASIA021",
       "region": "ASIA",
-      "bicheon_valley": "救世主丨天下",
-      "snake_valley": "救世主丨DropOutS",
-      "redmoon_valley": "Dreⓐm丨革命军④"
+      "bicheon_valley": "救世主丨Cannibal",
+      "snake_valley": "Dreⓐm丨革命军④",
+      "redmoon_valley": "小猫丨风暴"
     },
     {
       "server": "ASIA022",
       "region": "ASIA",
-      "bicheon_valley": "巧克力丨风暴",
-      "snake_valley": "ⓈunKissed丨风暴",
+      "bicheon_valley": "棉花糖丨风暴",
+      "snake_valley": "芒果冰 l 风暴",
       "redmoon_valley": "青龙会"
     },
     {
@@ -392,7 +392,7 @@
       "server": "ASIA032",
       "region": "ASIA",
       "bicheon_valley": "纯粹丨风暴",
-      "snake_valley": "老天爺Knight",
+      "snake_valley": "FreeMans丨风暴",
       "redmoon_valley": "Red丶Zone"
     },
     {
@@ -433,9 +433,9 @@
     {
       "server": "ASIA061",
       "region": "ASIA",
-      "bicheon_valley": "万佛归宗· Carnal",
-      "snake_valley": "名人堂・HN④",
-      "redmoon_valley": "群雄逐鹿①"
+      "bicheon_valley": "名人堂・HNツ",
+      "snake_valley": "群雄逐鹿①",
+      "redmoon_valley": "名人堂・HN④"
     },
     {
       "server": "ASIA062",
@@ -482,7 +482,7 @@
     {
       "server": "INMENA013",
       "region": "INMENA",
-      "bicheon_valley": "葬爱家族②",
+      "bicheon_valley": "Redflags",
       "snake_valley": "葬爱家族①",
       "redmoon_valley": "华夏 Phoenix"
     },
@@ -503,8 +503,8 @@
     {
       "server": "INMENA031",
       "region": "INMENA",
-      "bicheon_valley": "포양・BlackT",
-      "snake_valley": "포양・暗いLegion",
+      "bicheon_valley": "포양・暗いLegion",
+      "snake_valley": "포양・BlackT",
       "redmoon_valley": "포양・Fusang"
     },
     {
@@ -531,7 +531,7 @@
     {
       "server": "EU021",
       "region": "EU",
-      "bicheon_valley": "GearsofWar ③",
+      "bicheon_valley": "Fearlessメ",
       "snake_valley": "GearsofWar ①",
       "redmoon_valley": "GearsofWar⑦⑨"
     },
@@ -545,14 +545,14 @@
     {
       "server": "EU024",
       "region": "EU",
-      "bicheon_valley": "CryBerna ҉",
+      "bicheon_valley": "KILLINGZONES",
       "snake_valley": "名门 Anonymous",
-      "redmoon_valley": "KILLINGZONES"
+      "redmoon_valley": "CryBerna ҉"
     },
     {
       "server": "EU032",
       "region": "EU",
-      "bicheon_valley": "PokemonGø",
+      "bicheon_valley": "メ PⒶTRIOT丂 Ⓡ",
       "snake_valley": "GearsOfwarⓆⓉ",
       "redmoon_valley": "GearsOfwarⓇ"
     },
@@ -560,8 +560,8 @@
       "server": "SA011",
       "region": "SA",
       "bicheon_valley": "77 Team 一",
-      "snake_valley": "NoT FounDツ",
-      "redmoon_valley": "NoT FounD ②"
+      "snake_valley": "NoT FounD ②",
+      "redmoon_valley": "NoT FounDツ"
     },
     {
       "server": "SA012",
@@ -580,9 +580,9 @@
     {
       "server": "SA021",
       "region": "SA",
-      "bicheon_valley": "ⓌorstⒼen丶猫",
-      "snake_valley": "Unoccupied",
-      "redmoon_valley": "亗 DHM黑龙 亗"
+      "bicheon_valley": "DHM 亗 白龙 ②",
+      "snake_valley": "77 Team ll",
+      "redmoon_valley": "救世主丨DHM黑龙"
     },
     {
       "server": "SA022",
@@ -596,14 +596,14 @@
       "region": "SA",
       "bicheon_valley": "New Order ツ",
       "snake_valley": "メFUSIONメ",
-      "redmoon_valley": "救世主丨壮志"
+      "redmoon_valley": "救世主丨壮志 ①"
     },
     {
       "server": "SA031",
       "region": "SA",
       "bicheon_valley": "77 Team II",
-      "snake_valley": "dr34m",
-      "redmoon_valley": "救世主 KAIXAS"
+      "snake_valley": "救世主 KAIXAS",
+      "redmoon_valley": "77 Team I"
     },
     {
       "server": "SA032",
@@ -636,9 +636,9 @@
     {
       "server": "NA013",
       "region": "NA",
-      "bicheon_valley": "快乐名人堂①",
-      "snake_valley": "快乐名人堂②",
-      "redmoon_valley": "SC Lahui"
+      "bicheon_valley": "SC Lahui",
+      "snake_valley": "快乐名人堂①",
+      "redmoon_valley": "快乐名人堂②"
     },
     {
       "server": "NA014",
@@ -699,9 +699,9 @@
     {
       "server": "BASIA032",
       "region": "ASIA",
-      "bicheon_valley": "KUMA ツ",
+      "bicheon_valley": "SIXTYS7V3N67",
       "snake_valley": "征戰九州之傳奇霸业 ①",
-      "redmoon_valley": "征戰九州之傳奇霸业 ③"
+      "redmoon_valley": "征戰九州之傳奇霸业 ②"
     },
     {
       "server": "BASIA033",
@@ -7788,603 +7788,603 @@
     "clans": [
       {
         "rank": 1,
-        "clan": "Orion Fenix",
-        "leader": "Лилли",
-        "power": 23278995
+        "clan": "名人堂丶INFA",
+        "leader": "冥罰 Hecate",
+        "power": 19512195
       },
       {
         "rank": 2,
-        "clan": "регион 58",
-        "leader": "FULLEGTRNECK",
-        "power": 17583817
+        "clan": "征战九州之传奇霸业⑥③",
+        "leader": "Ruuruuruu ツ",
+        "power": 17528003
       },
       {
         "rank": 3,
-        "clan": "名门 主主 Orion",
-        "leader": "ПохметCестра",
-        "power": 15851114
+        "clan": "KAGEsPH",
+        "leader": "Arrrow Eye",
+        "power": 17024096
       },
       {
         "rank": 4,
-        "clan": "0ldGuard",
-        "leader": "SalamPacanam",
-        "power": 15048714
+        "clan": "NNAARRNIAAA",
+        "leader": "moon aTomîc",
+        "power": 16535886
       },
       {
         "rank": 5,
-        "clan": "UNFORGIVEN 覇",
-        "leader": "0no0 a",
-        "power": 14541312
+        "clan": "名人堂 Aeternum",
+        "leader": "Cotton20",
+        "power": 15686240
       },
       {
         "rank": 6,
-        "clan": "名门 GRANCLOE",
-        "leader": "PECCOメ420",
-        "power": 13867673
+        "clan": "TheGuardianz",
+        "leader": "SøuLFM",
+        "power": 14984761
       },
       {
         "rank": 7,
-        "clan": "Ⓥiệt Ⓝam",
-        "leader": "Huyết Ma Nữ",
-        "power": 13860808
+        "clan": "名人堂ⒸⒺⓁⒺⓈⓉⒾⒶⓁ",
+        "leader": "Jhánn17",
+        "power": 14605601
       },
       {
         "rank": 8,
-        "clan": "Братствo",
-        "leader": "DAMINION77",
-        "power": 13609904
+        "clan": "NORTH EAST",
+        "leader": "luo wi 22",
+        "power": 14261433
       },
       {
         "rank": 9,
-        "clan": "Óxido Puro",
-        "leader": "Ehlora",
-        "power": 12763185
+        "clan": "名人堂CNG 丶ADMT",
+        "leader": "rhenZ27",
+        "power": 14249126
       },
       {
         "rank": 10,
-        "clan": "Ukraine",
-        "leader": "kymmkian",
-        "power": 12620128
+        "clan": "名人堂丶MooNⓈHub",
+        "leader": "Hime8",
+        "power": 14231550
       },
       {
         "rank": 11,
-        "clan": "ⓏⓁⓄ",
-        "leader": "ШАПАТЗ ПИДАР",
-        "power": 11923020
+        "clan": "名人堂丶Eternals",
+        "leader": "TökyoManjï",
+        "power": 13956259
       },
       {
         "rank": 12,
-        "clan": "乇clipse",
-        "leader": "Maguilin",
-        "power": 11508647
+        "clan": "GOODB0Y PH",
+        "leader": "亗Veylazareth",
+        "power": 13138795
       },
       {
         "rank": 13,
-        "clan": "Free To Play",
-        "leader": "АrahnА",
-        "power": 11355351
+        "clan": "名人堂 ・원HWA",
+        "leader": "qstяeoи",
+        "power": 12969654
       },
       {
         "rank": 14,
-        "clan": "GOTⓇⓄShadows",
-        "leader": "Kaiidaa",
-        "power": 11143306
+        "clan": "名人堂丶WARFREAK",
+        "leader": "Wild G",
+        "power": 12942843
       },
       {
         "rank": 15,
-        "clan": "The GoD 1",
-        "leader": "TAOFree",
-        "power": 10543485
+        "clan": "BEARKADA X",
+        "leader": "Li Xiao Yao",
+        "power": 12688816
       },
       {
         "rank": 16,
-        "clan": "PYCb",
-        "leader": "Darkne33",
-        "power": 10410371
+        "clan": "壹丨1St Faмily",
+        "leader": "Go Hae Riiii",
+        "power": 12663051
       },
       {
         "rank": 17,
-        "clan": "Drachenring",
-        "leader": "Mjace28",
-        "power": 10370987
+        "clan": "・PEENOIZE・",
+        "leader": "catnel29",
+        "power": 12565829
       },
       {
         "rank": 18,
-        "clan": "Number Ten",
-        "leader": "起风了iu",
-        "power": 10235410
+        "clan": "UnitedRealms",
+        "leader": "TheMistLord",
+        "power": 12341285
       },
       {
         "rank": 19,
-        "clan": "AB5DK8R5",
-        "leader": "xuateste",
-        "power": 10050567
+        "clan": "名人堂・BC・",
+        "leader": "Dnestt182",
+        "power": 12207271
       },
       {
         "rank": 20,
-        "clan": "Лига Тeней",
-        "leader": "err62",
-        "power": 9863254
+        "clan": "声望RnG",
+        "leader": "xxAsiaxx",
+        "power": 11566619
       },
       {
         "rank": 21,
-        "clan": "BorderPatrol",
-        "leader": "UmayCan",
-        "power": 9809816
+        "clan": "阿里 AINCRAD",
+        "leader": "RyuAkira10",
+        "power": 11012268
       },
       {
         "rank": 22,
-        "clan": "NFTsGuardi4n",
-        "leader": "la2 chana",
-        "power": 9774393
+        "clan": "大风来袭",
+        "leader": "KKU8888",
+        "power": 10896969
       },
       {
         "rank": 23,
-        "clan": "minminmin",
-        "leader": "Devil丶梦梦女王",
-        "power": 9621710
+        "clan": "名人堂丶Regents",
+        "leader": "Sweetéstcry",
+        "power": 10605109
       },
       {
         "rank": 24,
-        "clan": "EnginK",
-        "leader": "kkshnp",
-        "power": 9568779
+        "clan": "Hudiyo",
+        "leader": "Chloe0007",
+        "power": 10371173
       },
       {
         "rank": 25,
-        "clan": "Suppressiоn",
-        "leader": "Me3z",
-        "power": 9310511
+        "clan": "名人堂 CNG 丶UHL",
+        "leader": "BlueszClues",
+        "power": 10272037
       },
       {
         "rank": 26,
-        "clan": "Deutsche RB",
-        "leader": "Pitsamai",
-        "power": 8873505
+        "clan": "・CANNIBEKS・",
+        "leader": "Chibog 너",
+        "power": 10141031
       },
       {
         "rank": 27,
-        "clan": "BIGDecebal",
-        "leader": "3Legpetz",
-        "power": 8757456
+        "clan": "ⓇⒼⓀ",
+        "leader": "Wan Shot",
+        "power": 9928144
       },
       {
         "rank": 28,
-        "clan": "Genesis亗",
-        "leader": "Shînkaî",
-        "power": 8575421
+        "clan": "名人堂・Archtect",
+        "leader": "Urbeyn002",
+        "power": 9600215
       },
       {
         "rank": 29,
-        "clan": "ⓌⒶⓋⒺ",
-        "leader": "dicomes",
-        "power": 8186689
+        "clan": "来袭大风",
+        "leader": "DragnForge2X",
+        "power": 9490600
       },
       {
         "rank": 30,
-        "clan": "Kitors II",
-        "leader": "Aikonko",
-        "power": 8100236
+        "clan": "때리지마",
+        "leader": "BÈLLÀTRIX",
+        "power": 9224898
       },
       {
         "rank": 31,
-        "clan": "RiceL0ve",
-        "leader": "Sombra ッ",
-        "power": 7872734
+        "clan": "SERAPHIMッ",
+        "leader": "Thorneblade",
+        "power": 9197825
       },
       {
         "rank": 32,
-        "clan": "0xLT",
-        "leader": "kazlas8888",
-        "power": 7751105
+        "clan": "SAF RANGER",
+        "leader": "mozzarella29",
+        "power": 8605908
       },
       {
         "rank": 33,
-        "clan": "nhuccccc",
-        "leader": "theguys",
-        "power": 7554485
+        "clan": "ツCLOUDツ",
+        "leader": "Ire22ne",
+        "power": 8580917
       },
       {
         "rank": 34,
-        "clan": "GOT YinYang",
-        "leader": "EVANGELLION",
-        "power": 7513998
+        "clan": "EtherealPeak",
+        "leader": "巭孬嫑夯茓丷",
+        "power": 8505774
       },
       {
         "rank": 35,
-        "clan": "CELTIBEROS",
-        "leader": "Мівіна",
-        "power": 7362873
+        "clan": "BAGUIOph",
+        "leader": "Luk0 シ",
+        "power": 8472436
       },
       {
         "rank": 36,
-        "clan": "OP TH",
-        "leader": "SWAT Dora",
-        "power": 7270038
+        "clan": "ASYLUM v2",
+        "leader": "Marcia Doher",
+        "power": 8387301
       },
       {
         "rank": 37,
-        "clan": "DT DARK MNER",
-        "leader": "SagittaNoxシ",
-        "power": 7141073
+        "clan": "マDarkMysticマ",
+        "leader": "okoyyyy",
+        "power": 8344750
       },
       {
         "rank": 38,
-        "clan": "xHEMANx",
-        "leader": "Daoyummy",
-        "power": 7081595
+        "clan": "AREA SEVEN",
+        "leader": "12ff12",
+        "power": 8291199
       },
       {
         "rank": 39,
-        "clan": "Abao12",
-        "leader": "´F0RTES",
-        "power": 7008079
+        "clan": "MAMAMATAYシ",
+        "leader": "Dantecon",
+        "power": 8154670
       },
       {
         "rank": 40,
-        "clan": "EU12 gold",
-        "leader": "top trad",
-        "power": 6975574
+        "clan": "名人堂・Cheërs",
+        "leader": "GinaCaLLme07",
+        "power": 7714459
       },
       {
         "rank": 41,
-        "clan": "Tolon",
-        "leader": "Шлюхерка",
-        "power": 6954047
+        "clan": "聚神殿",
+        "leader": "DethRaven'",
+        "power": 7709289
       },
       {
         "rank": 42,
-        "clan": "NFT AA",
-        "leader": "Caaatttt",
-        "power": 6862768
+        "clan": "YA KU ZA",
+        "leader": "Boobuddy",
+        "power": 7593850
       },
       {
         "rank": 43,
-        "clan": "042PPHGG031",
-        "leader": "SAMU Manuela",
-        "power": 6816367
+        "clan": "SOLO RIDERS",
+        "leader": "Srirachaman",
+        "power": 7563981
       },
       {
         "rank": 44,
-        "clan": "CODE 404 PH",
-        "leader": "07Superman",
-        "power": 6708842
+        "clan": "iGuTzz PH",
+        "leader": "김애리",
+        "power": 7518962
       },
       {
         "rank": 45,
-        "clan": "FreelyTR2",
-        "leader": "Fox a bit",
-        "power": 6582291
+        "clan": "๗ ประจัญบาน",
+        "leader": "เหมา เชิงมวย",
+        "power": 7509008
       },
       {
         "rank": 46,
-        "clan": "Dominion",
-        "leader": "AnomaLy22",
-        "power": 6573372
+        "clan": "MurderSquad",
+        "leader": "overalien",
+        "power": 7481195
       },
       {
         "rank": 47,
-        "clan": "DarkSteel",
-        "leader": "Luntik48",
-        "power": 6465306
+        "clan": "Mind Game PH",
+        "leader": "bennjoon",
+        "power": 7301123
       },
       {
         "rank": 48,
-        "clan": "HazeNation",
-        "leader": "FrancoCagn",
-        "power": 5943530
+        "clan": "MakaritPH",
+        "leader": "Crazyiuuu",
+        "power": 7297723
       },
       {
         "rank": 49,
-        "clan": "XHISPANOX",
-        "leader": "RedTaoHealer",
-        "power": 5677376
+        "clan": "DALUOSI",
+        "leader": "一花一世界202",
+        "power": 7245091
       },
       {
         "rank": 50,
-        "clan": "TheLazyMass",
-        "leader": "Psyche シ",
-        "power": 5536427
+        "clan": "RIVERS PH",
+        "leader": "PEWDIEPUK3",
+        "power": 7223113
       },
       {
         "rank": 51,
-        "clan": "Freely NO3",
-        "leader": "Vanlise",
-        "power": 5349627
+        "clan": "・CANNIBALS・",
+        "leader": "Kyankarl 乂",
+        "power": 7170408
       },
       {
         "rank": 52,
-        "clan": "EXOTICメ710",
-        "leader": "Norfrita",
-        "power": 5338663
+        "clan": "D3・PSYCHO",
+        "leader": "yayiebee",
+        "power": 7059218
       },
       {
         "rank": 53,
-        "clan": "ERorr",
-        "leader": "Kayashy",
-        "power": 5337909
+        "clan": "闪现摸你奶",
+        "leader": "姜浩宇",
+        "power": 7024000
       },
       {
         "rank": 54,
-        "clan": "Anarchy EU",
-        "leader": "Underwqter",
-        "power": 5309248
+        "clan": "SNOW FIELDSツ",
+        "leader": "Devil 女王",
+        "power": 6833313
       },
       {
         "rank": 55,
-        "clan": "AutotradE",
-        "leader": "Kwen31",
-        "power": 4900861
+        "clan": "名人堂丶ARCANE",
+        "leader": "L卂几匚乇尺乂",
+        "power": 6744617
       },
       {
         "rank": 56,
-        "clan": "AntQueen",
-        "leader": "xAlishia",
-        "power": 4884958
+        "clan": "HIGH COUNClL",
+        "leader": "Ҝ卂几卂0",
+        "power": 6694257
       },
       {
         "rank": 57,
-        "clan": "lhsxxeu012",
-        "leader": "Svenxxx",
-        "power": 4739003
+        "clan": "InDy ツ",
+        "leader": "หมัด เชิงมวย",
+        "power": 6646240
       },
       {
         "rank": 58,
-        "clan": "NMax",
-        "leader": "leppp",
-        "power": 4697187
+        "clan": "Saints SPH",
+        "leader": "Blushhh",
+        "power": 6451401
       },
       {
         "rank": 59,
-        "clan": "AnimalX",
-        "leader": "Micuta",
-        "power": 4692255
+        "clan": "GU4RDIAN",
+        "leader": "G4B4YnaG1NT0",
+        "power": 6401837
       },
       {
         "rank": 60,
-        "clan": "MirM",
-        "leader": "Sidis",
-        "power": 4607545
+        "clan": "0ooHATEoo0",
+        "leader": "ZefrieL",
+        "power": 6248365
       },
       {
         "rank": 61,
-        "clan": "peacekidEU12",
-        "leader": "Lisanna20",
-        "power": 4422280
+        "clan": "China中南海",
+        "leader": "Mangalga",
+        "power": 6232945
       },
       {
         "rank": 62,
-        "clan": "U N",
-        "leader": "Cleidinha力",
-        "power": 4170888
+        "clan": "superbig",
+        "leader": "N4dDL33H",
+        "power": 6173491
       },
       {
         "rank": 63,
-        "clan": "七宗罪 丶Wrath",
-        "leader": "3 Punch",
-        "power": 4093445
+        "clan": "TNVN",
+        "leader": "saha001",
+        "power": 5994878
       },
       {
         "rank": 64,
-        "clan": "NFTsGuardian",
-        "leader": "Frinailla",
-        "power": 4064607
+        "clan": "Aurix",
+        "leader": "Adela Crane",
+        "power": 5952587
       },
       {
         "rank": 65,
-        "clan": "Thunderouszx",
-        "leader": "Devil丶Zakk",
-        "power": 4019046
+        "clan": "Artisan Tech",
+        "leader": "magik piso",
+        "power": 5850283
       },
       {
         "rank": 66,
-        "clan": "The Whale",
-        "leader": "Ludeeee",
-        "power": 3984550
+        "clan": "后面有人",
+        "leader": "gabrielcl0ng",
+        "power": 5846005
       },
       {
         "rank": 67,
-        "clan": "bok 2kk2 bok",
-        "leader": "Scaarleet",
-        "power": 3871447
+        "clan": "Revenant BYG",
+        "leader": "QueenP17",
+        "power": 5719530
       },
       {
         "rank": 68,
-        "clan": "NesПящие",
-        "leader": "izotovec",
-        "power": 3819552
+        "clan": "SilverRat",
+        "leader": "KHRISXD",
+        "power": 5572295
       },
       {
         "rank": 69,
-        "clan": "绝代凤凰",
-        "leader": "吞咽沧つ桑",
-        "power": 3619127
+        "clan": "恶魔RNG",
+        "leader": "xXmarliXx",
+        "power": 5551677
       },
       {
         "rank": 70,
-        "clan": "2n00b4U",
-        "leader": "Assaka",
-        "power": 3601148
+        "clan": "La Marquesa",
+        "leader": "NezukoLuna",
+        "power": 5458835
       },
       {
         "rank": 71,
-        "clan": "Shahin",
-        "leader": "Zoombabwe",
-        "power": 3549699
+        "clan": "壹丨PLA Family",
+        "leader": "ImbaNeljay",
+        "power": 5307827
       },
       {
         "rank": 72,
-        "clan": "Luckyshot",
-        "leader": "HelpusefuL",
-        "power": 3519063
+        "clan": "名人堂・WAITT",
+        "leader": "katara24",
+        "power": 5187013
       },
       {
         "rank": 73,
-        "clan": "MAHARLÌKÁ",
-        "leader": "Lex4",
-        "power": 3505304
+        "clan": "LICOSTREET",
+        "leader": "joebert2030",
+        "power": 5081725
       },
       {
         "rank": 74,
-        "clan": "Freedoomru",
-        "leader": "尽精灵心碎诺言",
-        "power": 3477498
+        "clan": "ⓀⓃⒹ・Divinous",
+        "leader": "ⓀⓃⒹ・Xiweii",
+        "power": 5078429
       },
       {
         "rank": 75,
-        "clan": "天下无双一",
-        "leader": "xLathi",
-        "power": 3371484
+        "clan": "名人堂丶WickeD",
+        "leader": "邪惡 Disya",
+        "power": 5065539
       },
       {
         "rank": 76,
-        "clan": "LittleTeam",
-        "leader": "Наталья7",
-        "power": 3208153
+        "clan": "Freemans",
+        "leader": "KOV000",
+        "power": 4949264
       },
       {
         "rank": 77,
-        "clan": "Яevølutiøn",
-        "leader": "一一一一一一一一NWAN",
-        "power": 3139349
+        "clan": "Team Rizal",
+        "leader": "MagicBomba",
+        "power": 4903238
       },
       {
         "rank": 78,
-        "clan": "Ханты",
-        "leader": "флорианна",
-        "power": 3139037
+        "clan": "PH Actives",
+        "leader": "ฮอร์ลินดา",
+        "power": 4794796
       },
       {
         "rank": 79,
-        "clan": "UNF SKLWGS",
-        "leader": "MirPlayer3",
-        "power": 3072143
+        "clan": "XAnubisX",
+        "leader": "SAMSON III",
+        "power": 4790724
       },
       {
         "rank": 80,
-        "clan": "djhdth",
-        "leader": "GlaDio001",
-        "power": 3006553
+        "clan": "DAM4RA",
+        "leader": "Ârtêmis",
+        "power": 4765259
       },
       {
         "rank": 81,
-        "clan": "España13ツ",
-        "leader": "sigeldrew3",
-        "power": 2971409
+        "clan": "BER5ERK",
+        "leader": "Quevedex",
+        "power": 4738565
       },
       {
         "rank": 82,
-        "clan": "Legion XI",
-        "leader": "velisira",
-        "power": 2907971
+        "clan": "・NOBLESSE・",
+        "leader": "x8M6DH",
+        "power": 4669105
       },
       {
         "rank": 83,
-        "clan": "ArchTEAM",
-        "leader": "FT Lana",
-        "power": 2904069
+        "clan": "名人堂丶JIMS",
+        "leader": "darki777",
+        "power": 4646361
       },
       {
         "rank": 84,
-        "clan": "Ragnarok IV",
-        "leader": "DAMIK 77",
-        "power": 2890301
+        "clan": "EmperadorPH",
+        "leader": "虎哥布林",
+        "power": 4645772
       },
       {
         "rank": 85,
-        "clan": "Kamote PH",
-        "leader": "SashaStriker",
-        "power": 2877614
+        "clan": "PetWussyPH",
+        "leader": "pvmpkinnnn",
+        "power": 4641766
       },
       {
         "rank": 86,
-        "clan": "PlayGS",
-        "leader": "GOLDFINCH",
-        "power": 2864841
+        "clan": "AMOY US",
+        "leader": "Eunice Archi",
+        "power": 4506893
       },
       {
         "rank": 87,
-        "clan": "KUSHspain",
-        "leader": "xC0BRAx",
-        "power": 2828896
+        "clan": "폭동 MUTINY",
+        "leader": "zBlockx17",
+        "power": 4462799
       },
       {
         "rank": 88,
-        "clan": "СОПАРТИЕЦ",
-        "leader": "ilya2426",
-        "power": 2807502
+        "clan": "マラボンAhon",
+        "leader": "Daddy'A",
+        "power": 4458089
       },
       {
         "rank": 89,
-        "clan": "Diablo IV",
-        "leader": "左语",
-        "power": 2758181
+        "clan": "HLDP'BossPH",
+        "leader": "swt7DE",
+        "power": 4408546
       },
       {
         "rank": 90,
-        "clan": "uluturk",
-        "leader": "cycykys",
-        "power": 2622584
+        "clan": "荣耀远征",
+        "leader": "Faizzz",
+        "power": 4377074
       },
       {
         "rank": 91,
-        "clan": "ShadowDark",
-        "leader": "SVBPJPB",
-        "power": 2621848
+        "clan": "cvbnf",
+        "leader": "吉普吉",
+        "power": 4355425
       },
       {
         "rank": 92,
-        "clan": "Novosib54",
-        "leader": "Wringder",
-        "power": 2616055
+        "clan": "XXKnightsXXX",
+        "leader": "ⓟⓐⓝⓝⓐ",
+        "power": 4285851
       },
       {
         "rank": 93,
-        "clan": "POССИЯ",
-        "leader": "zefghtxr",
-        "power": 2527520
+        "clan": "聚 仙 殿 XIII",
+        "leader": "4r8a13",
+        "power": 4263565
       },
       {
         "rank": 94,
-        "clan": "Konchennye",
-        "leader": "HnRK2",
-        "power": 2518376
+        "clan": "kirin1",
+        "leader": "Xeyna",
+        "power": 4247162
       },
       {
         "rank": 95,
-        "clan": "COCOCOC",
-        "leader": "ТульскийТока",
-        "power": 2513319
+        "clan": "INTEGRALS",
+        "leader": "Bernice Mau",
+        "power": 4152788
       },
       {
         "rank": 96,
-        "clan": "Shimmerlight",
-        "leader": "andrekonon",
-        "power": 2322052
+        "clan": "1 AutumnLeaf",
+        "leader": "zo0sy",
+        "power": 4084071
       },
       {
         "rank": 97,
-        "clan": "Ukraine24NA7",
-        "leader": "DimonIgnor",
-        "power": 2315617
+        "clan": "天忍",
+        "leader": "wuang wuang",
+        "power": 4056116
       },
       {
         "rank": 98,
-        "clan": "I Method I",
-        "leader": "Inspectorul",
-        "power": 2303819
+        "clan": "hubayi634",
+        "leader": "PsychoFuny",
+        "power": 4044680
       },
       {
         "rank": 99,
-        "clan": "YILDIZTEAM",
-        "leader": "DarkKisTTa",
-        "power": 2299022
+        "clan": "TeamKingZ",
+        "leader": "SelenaKingZ",
+        "power": 3995807
       },
       {
         "rank": 100,
-        "clan": "Black Tide",
-        "leader": "SpiritSpick",
-        "power": 2291156
+        "clan": "BROTHERHOOD'",
+        "leader": "B3bek R3buS",
+        "power": 3938347
       }
     ]
   },
